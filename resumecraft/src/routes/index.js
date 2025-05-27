@@ -5,6 +5,7 @@ const templatesController = require('../controllers/templates');
 const generateController = require('../controllers/generate');
 const grammarController = require('../controllers/grammarCheck');
 const exportController = require('../controllers/exportPdf');
+const configController = require('../controllers/config');
 
 const router = express.Router();
 // Health endpoint
@@ -181,5 +182,38 @@ router.post('/grammar-check', grammarController.check);
  *               format: binary
  */
 router.post('/export-pdf', exportController.export);
+
+/**
+ * @swagger
+ * /config:
+ *   get:
+ *     summary: Get frontend configuration (theme and palette)
+ *     tags:
+ *       - Config
+ *     responses:
+ *       200:
+ *         description: Theme and palette for frontend
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 theme:
+ *                   type: string
+ *                   example: dark
+ *                 colors:
+ *                   type: object
+ *                   properties:
+ *                     primary:
+ *                       type: string
+ *                       example: "#6C3FC5"
+ *                     secondary:
+ *                       type: string
+ *                       example: "#1A1A1A"
+ *                     accent:
+ *                       type: string
+ *                       example: "#B39DDB"
+ */
+router.get('/config', configController.get.bind(configController));
 
 module.exports = router;
