@@ -1,10 +1,10 @@
 const express = require('express');
 const healthController = require('../controllers/health');
-// Placeholder imports for main API controllers (to be implemented separately)
+// Register routes with actual controllers.
 const templatesController = require('../controllers/templates');
 const generateController = require('../controllers/generate');
-const grammarController = require('../controllers/grammar');
-const exportController = require('../controllers/export');
+const grammarController = require('../controllers/grammarCheck');
+const exportController = require('../controllers/exportPdf');
 
 const router = express.Router();
 // Health endpoint
