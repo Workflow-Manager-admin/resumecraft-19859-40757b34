@@ -1,0 +1,14 @@
+.rc-actions {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1em;
+  margin-top: 1.3em;
+}
+
+.rc-action-status {
+  margin-left: 1em;
+  color: var(--accent);
+  font-size: 0.99em;
+  min-width: 90px;
+}
