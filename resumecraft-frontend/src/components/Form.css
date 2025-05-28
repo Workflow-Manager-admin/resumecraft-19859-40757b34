@@ -1,0 +1,88 @@
+.rc-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.rc-form-block {
+  margin-bottom: 1.25em;
+}
+
+.rc-form-block label {
+  color: var(--primary);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  font-size: 1em;
+  margin-bottom: 0.28em;
+  justify-content: space-between;
+}
+
+.rc-fields {
+  display: flex;
+  flex-direction: row;
+  gap: 0.56em;
+  margin-bottom: 0.5em;
+}
+.rc-fields input {
+  flex: 1 1 0;
+}
+
+input, textarea, select {
+  background: #231f36;
+  color: var(--text);
+  border: 1.2px solid #3b2a67;
+  padding: 0.52rem 0.8rem;
+  font-size: 1em;
+  border-radius: 6px;
+  margin-bottom: 0.25em;
+  outline: none;
+  transition: border 0.19s;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border: 1.2px solid var(--primary);
+}
+
+textarea {
+  min-height: 90px;
+  max-width: 100%;
+  background: #231f36;
+  color: var(--text);
+}
+
+.rc-form-add {
+  background: var(--accent);
+  color: #130c21;
+  font-size: 0.98em;
+  font-weight: 700;
+  border-radius: 4px;
+  border: none;
+  margin-left: 0.62em;
+  cursor: pointer;
+  padding: 2px 11px;
+}
+.rc-form-add:hover {
+  background: var(--primary);
+  color: #fff;
+}
+
+.rc-form-remove {
+  background: none;
+  border: none;
+  color: #ec3077;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 1em;
+  padding: 0 6px;
+  margin-left: 3px;
+}
+
+.rc-form-array {
+  display: flex;
+  gap: 0.4em;
+  margin: 0 0 0.19em 0;
+  align-items: flex-start;
+}
