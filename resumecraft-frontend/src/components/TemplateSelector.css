@@ -1,0 +1,62 @@
+.rc-template-selector {
+  margin-bottom: 1.4rem;
+}
+
+.rc-ts-label {
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 1.08em;
+  margin-bottom: 0.245em;
+  display: block;
+}
+
+.rc-ts-list {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-bottom: 0.5em;
+  flex-wrap: wrap;
+}
+
+.rc-ts-tile {
+  background: #271e43;
+  border: 2.5px solid #221661;
+  color: var(--text);
+  border-radius: 7px;
+  box-shadow: 0 2px 8px #372ea085, 0 0.5px 2px #411f8544;
+  cursor: pointer;
+  padding: 0.5em 0.75em;
+  min-width: 90px;
+  min-height: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  outline: none;
+  transition: border .23s, box-shadow .25s;
+}
+
+.rc-ts-tile:hover, .rc-ts-tile:focus {
+  border: 2.5px solid var(--accent);
+  box-shadow: 0 2px 15px #6C3FC555;
+}
+
+.rc-ts-selected {
+  border: 2.5px solid var(--primary);
+  background: #3829AA;
+}
+
+.rc-ts-thumb img {
+  width: 54px;
+  height: 38px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 0.24em;
+  background: #100c16;
+}
+
+.rc-ts-name {
+  color: var(--text);
+  font-size: 0.92em;
+  text-align: center;
+  margin-top: 0.1em;
+}
